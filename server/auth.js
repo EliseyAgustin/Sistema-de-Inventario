@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const { pool } = require('./db');
 
 // JWT Secret
-const JWT_SECRET = process.env.JWT_SECRET || '';
+const JWT_SECRET = process.env.JWT_SECRET || "secret-key"; // Replace with your own secret key
 
 // Login route
 router.post('/login', async (req, res) => {

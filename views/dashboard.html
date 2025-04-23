@@ -21,7 +21,7 @@
             
             <div class="mt-10">
                 <div id="user-info" class="px-4 py-2 mb-6">
-                    <p class="text-sm">Welcome, <span id="user-name">User</span></p>
+                    <p class="text-sm">Bienvenido, <span id="user-name">Usuario</span></p>
                 </div>
                 
                 <nav>
@@ -29,14 +29,14 @@
                         <i class="fas fa-chart-line mr-2"></i>Dashboard
                     </a>
                     <a href="/inventory" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
-                        <i class="fas fa-boxes mr-2"></i>Inventory
+                        <i class="fas fa-boxes mr-2"></i>Inventario
                     </a>
                 </nav>
             </div>
             
             <div class="absolute bottom-0 w-full px-4 py-4">
                 <button id="logout-btn" class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700">
-                    <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    <i class="fas fa-sign-out-alt mr-2"></i>Salir del sistema
                 </button>
             </div>
         </div>
@@ -66,7 +66,7 @@
                                 <i class="fas fa-box fa-2x"></i>
                             </div>
                             <div class="ml-4">
-                                <p class="text-gray-500 text-sm">Total Products</p>
+                                <p class="text-gray-500 text-sm">Productos totales</p>
                                 <h3 id="total-products" class="text-2xl font-bold">0</h3>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                                 <i class="fas fa-exclamation-triangle fa-2x"></i>
                             </div>
                             <div class="ml-4">
-                                <p class="text-gray-500 text-sm">Low Stock Items</p>
+                                <p class="text-gray-500 text-sm">Stock de productos bajo</p>
                                 <h3 id="low-stock" class="text-2xl font-bold">0</h3>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                                 <i class="fas fa-times-circle fa-2x"></i>
                             </div>
                             <div class="ml-4">
-                                <p class="text-gray-500 text-sm">Out of Stock</p>
+                                <p class="text-gray-500 text-sm">Sin stock</p>
                                 <h3 id="out-of-stock" class="text-2xl font-bold">0</h3>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                                 <i class="fas fa-dollar-sign fa-2x"></i>
                             </div>
                             <div class="ml-4">
-                                <p class="text-gray-500 text-sm">Inventory Value</p>
+                                <p class="text-gray-500 text-sm">Valor de Inventario</p>
                                 <h3 id="inventory-value" class="text-2xl font-bold">$0.00</h3>
                             </div>
                         </div>
@@ -112,24 +112,24 @@
                 <!-- Low Stock Alert -->
                 <div class="bg-white rounded-lg shadow-md p-6 mb-6">
                     <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-lg font-semibold">Low Stock Items</h2>
-                        <a href="/inventory" class="text-blue-500 hover:underline text-sm">View All</a>
+                        <h2 class="text-lg font-semibold">Stock de productos bajo</h2>
+                        <a href="/inventory" class="text-blue-500 hover:underline text-sm">Visualizar todo</a>
                     </div>
                     <div class="overflow-x-auto">
                         <table class="min-w-full bg-white">
                             <thead>
                                 <tr>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Product</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Category</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Current Stock</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Threshold</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Status</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Producto</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Categoría</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Stock actual</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Limite</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Estado</th>
                                 </tr>
                             </thead>
                             <tbody id="low-stock-table">
                                 <!-- Low stock items will be loaded here -->
                                 <tr>
-                                    <td colspan="5" class="py-4 px-4 text-center text-gray-500">Loading...</td>
+                                    <td colspan="5" class="py-4 px-4 text-center text-gray-500">Cargando...</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -139,23 +139,23 @@
                 <!-- Recent Activity -->
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-lg font-semibold">Recent Activity</h2>
+                        <h2 class="text-lg font-semibold">Actividad reciente</h2>
                     </div>
                     <div class="overflow-x-auto">
                         <table class="min-w-full bg-white">
                             <thead>
                                 <tr>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Product</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Quantity</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Type</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">User</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Date</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Producto</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Cantidad</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Tipo</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Usuario</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Dato</th>
                                 </tr>
                             </thead>
                             <tbody id="recent-activity-table">
                                 <!-- Recent activity will be loaded here -->
                                 <tr>
-                                    <td colspan="5" class="py-4 px-4 text-center text-gray-500">Loading...</td>
+                                    <td colspan="5" class="py-4 px-4 text-center text-gray-500">Cargar...</td>
                                 </tr>
                             </tbody>
                         </table>
