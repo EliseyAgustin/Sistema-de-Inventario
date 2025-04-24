@@ -36,7 +36,7 @@
             
             <div class="absolute bottom-0 w-full px-4 py-4">
                 <button id="logout-btn" class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700">
-                    <i class="fas fa-sign-out-alt mr-2"></i>Salir del sistema
+                    <i class="fas fa-sign-out-alt mr-2"></i>Cerrar sesión
                 </button>
             </div>
         </div>
@@ -78,7 +78,7 @@
                                 <i class="fas fa-exclamation-triangle fa-2x"></i>
                             </div>
                             <div class="ml-4">
-                                <p class="text-gray-500 text-sm">Stock de productos bajo</p>
+                                <p class="text-gray-500 text-sm">Artículos con bajo stock</p>
                                 <h3 id="low-stock" class="text-2xl font-bold">0</h3>
                             </div>
                         </div>
@@ -112,8 +112,8 @@
                 <!-- Low Stock Alert -->
                 <div class="bg-white rounded-lg shadow-md p-6 mb-6">
                     <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-lg font-semibold">Stock de productos bajo</h2>
-                        <a href="/inventory" class="text-blue-500 hover:underline text-sm">Visualizar todo</a>
+                        <h2 class="text-lg font-semibold">Artículos con bajo stock</h2>
+                        <a href="/inventory" class="text-blue-500 hover:underline text-sm">Ver todos</a>
                     </div>
                     <div class="overflow-x-auto">
                         <table class="min-w-full bg-white">
@@ -149,13 +149,13 @@
                                     <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Cantidad</th>
                                     <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Tipo</th>
                                     <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Usuario</th>
-                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Dato</th>
+                                    <th class="py-2 px-4 border-b border-gray-200 bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Fecha</th>
                                 </tr>
                             </thead>
                             <tbody id="recent-activity-table">
                                 <!-- Recent activity will be loaded here -->
                                 <tr>
-                                    <td colspan="5" class="py-4 px-4 text-center text-gray-500">Cargar...</td>
+                                    <td colspan="5" class="py-4 px-4 text-center text-gray-500">Cargando...</td>
                                 </tr>
                             </tbody>
                         </table>
